@@ -1,0 +1,54 @@
+<script>
+    function update() {
+        document.getElementById('text').value = qzeqcount;
+     document.getElementById('ammountAutoClick').innerHTML = "You own" +autoClick + "Auto Clickers" + "Wow u are so rich!";
+
+    }
+
+    var qzeqcount = 0;
+
+    setInterval(timer, 1000)
+    </script>
+    <head><title>click the qzeq</title></head>
+    <body>
+        <h1>click the qzeq</h1>
+        <a href=# onclick="add()"><img src="qzeq.jpg"</a>
+        <br><br>
+        How many times u just clicked the:
+        <input type="text" id="text" disabled style="text-align:center";
+       
+    </body>
+    <script>
+    function add() {
+        qzeqcount = qzeqcount + 1
+        update()
+        }
+    </script>
+    Qzeq guy
+    <br><br>
+
+
+    <button><a href="#" onClick="save()">Save clicks</a></button>
+    <button><a href="#" onClick="load()">Load clicks</a></button>
+    <br><br>
+
+    <script>
+function save() {
+localStorage.setItem("qzeqcount", qzeqcount);
+
+}
+
+function load() {
+qzeqcount = localStorage.getItem("qzeqcount");
+qzeqcount = parseInt(qzeqcount);
+update()
+
+}
+</script>
+<button id="btn" onclick="audio.play();">Play the song</button>
+<script type="text/javascript">
+const audio = new Audio();
+audio.src = "song.mp3"
+
+</script>      
+</body>
